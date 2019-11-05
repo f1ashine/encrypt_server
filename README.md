@@ -25,4 +25,4 @@ pip install -r requirements.txt
 其他问题可参考 https://blog.csdn.net/weixin_39198406/article/details/86719814
 
 ### 0x03 运行截图
-![运行截图](https://github.com/f1ashine/encrypt_server/raw/master/screenshot.jpg
+![运行截图](https://github.com/f1ashine/encrypt_server/raw/master/screenshot.jpg)

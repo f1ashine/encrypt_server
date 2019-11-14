@@ -14,15 +14,22 @@
 ```
 pip install -r requirements.txt
 ```
-
-#### 2.2 建议自行安装chromium，不要使用Pyppeteer下载chromium
-
-`pyppeteer_test.py`用于调试Chromium能否正确执行js代码  
-在Chromium执行js时可能会遇到  
-`pyppeteer.errors.NetworkError: Protocol Error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
-`  
+#### 2.2 遇到的问题
+1. windows环境下安装sanic可能会遇到`error: Microsoft Visual C++ 14.0 is required`的问题，直接下载[Microsoft Visual C++ Build Tools 2015](https://sanic.readthedocs.io/en/latest/)安装即可解决
+2. `pyppeteer_test.py`用于调试Chromium能否正确执行js代码，在Chromium执行js时可能会遇到  
+`pyppeteer.errors.NetworkError: Protocol Error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.`  
 参考 https://github.com/miyakogi/pyppeteer/pull/160/files 修改源码解决  
 其他问题可参考 https://blog.csdn.net/weixin_39198406/article/details/86719814
+
+#### 2.3 tips
+**pyppeteer**安装目录下有一个chromium_downloader.py，安装时如检测到未安装chromium，该脚本则会自启动下载chromium，并保存在`__pyppeteer_home__`下  
+windows下的`__pyppeteer_home__`路径为`C:\Users\f1ashine\AppData\Local\pyppeteer\pyppeteer`，其他平台可自行寻找。  
+
+mac安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Mac/575458/chrome-mac.zip
+linux安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Linux_x64/575458/chrome-linux.zip
+win64安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Win_x64/575458/chrome-win32.zip
+win32安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Win/575458/chrome-win32.zip
+
 
 ### 0x03 运行截图
 ![运行截图](https://github.com/f1ashine/encrypt_server/blob/master/screenshot.jpg)

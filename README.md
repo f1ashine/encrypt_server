@@ -25,9 +25,9 @@ pip install -r requirements.txt
 **pyppeteer**安装目录下有一个chromium_downloader.py，安装时如检测到未安装chromium，该脚本则会自启动下载chromium，并保存在`__pyppeteer_home__`下  
 windows下的`__pyppeteer_home__`路径为`C:\Users\f1ashine\AppData\Local\pyppeteer\pyppeteer`，其他平台可自行寻找。  
 
-mac安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Mac/575458/chrome-mac.zip
-linux安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Linux_x64/575458/chrome-linux.zip
-win64安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Win_x64/575458/chrome-win32.zip
+mac安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Mac/575458/chrome-mac.zip  
+linux安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Linux_x64/575458/chrome-linux.zip  
+win64安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Win_x64/575458/chrome-win32.zip  
 win32安装chromium：https://storage.googleapis.com/chromium-browser-snapshots/Win/575458/chrome-win32.zip
 
 

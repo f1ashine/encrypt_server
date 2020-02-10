@@ -15,7 +15,7 @@
 pip install -r requirements.txt
 ```
 #### 2.2 遇到的问题
-1. windows环境下安装sanic可能会遇到`error: Microsoft Visual C++ 14.0 is required`的问题，直接下载[Microsoft Visual C++ Build Tools 2015](https://sanic.readthedocs.io/en/latest/)安装即可解决
+1. windows环境下安装sanic可能会遇到`error: Microsoft Visual C++ 14.0 is required`的问题，直接下载[Microsoft Visual C++ Build Tools 2015](http://go.microsoft.com/fwlink/?LinkId=691126)安装即可解决
 2. `pyppeteer_test.py`用于调试Chromium能否正确执行js代码，在Chromium执行js时可能会遇到  
 `pyppeteer.errors.NetworkError: Protocol Error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.`  
 参考 https://github.com/miyakogi/pyppeteer/pull/160/files 修改源码解决  

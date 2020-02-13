@@ -1,6 +1,7 @@
 # encrypt_server
 ### 0x01 说明
 参考Burp插件[jsEncrypter](https://github.com/c0ny1/jsEncrypter)使用本地HTTP Server对payload进行加密。  
+只需要参考config.py进行配置，然后参考运行截图即可。
 
 优点：不需要导入js文件，只需要事先在网页console端调试好加密代码即可
 

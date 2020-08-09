@@ -39,7 +39,7 @@ async def start_chrome(app):
     app.browser = browser
     page = await app.browser.newPage()
     if len(config.COOKIE) > 0:
-        page.setCookie(config.CODE)
+        page.setCookie(config.COOKIE)
     app.page = page
     if len(config.URL) > 0:
         await page.goto(config.URL)

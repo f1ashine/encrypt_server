@@ -20,6 +20,9 @@ pip install -r requirements.txt
 2. `pyppeteer_test.py`用于调试Chromium能否正确执行js代码，在Chromium执行js时可能会遇到  
 `pyppeteer.errors.NetworkError: Protocol Error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.`  
 参考 https://github.com/miyakogi/pyppeteer/pull/160/files 修改源码解决  
+3. 在从python传递字符串到js中，若python代码的字符串中含有`\n`等特殊字符，需要改写为`\\n`才行。
+4. 在调试过程中，使用`console.log`无法输出变量，可直接调用`evaluate(param)`函数输出变量值。
+
 其他问题可参考 https://blog.csdn.net/weixin_39198406/article/details/86719814
 
 #### 2.3 tips
